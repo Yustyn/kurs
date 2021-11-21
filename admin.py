@@ -78,7 +78,7 @@ if __name__ == "__main__":
         "treatment_cost": "10000",
     }
 
-    add_visit_data = {
+    add_visit_data = [{
         "person_id": "4",
         "visit_date": "21.11.2021",
         "doctor": "3",
@@ -87,12 +87,12 @@ if __name__ == "__main__":
         "description": "",
         "treatment_cost": "1000",
         "img": "",
-    }
+    }]
 
     person_1 = Admin()
     # person_1.add_person(person_1_data)
     # person_1.edit_person(person_1_edit_data, "id = '4'")
-    # person_1.get_person_data("id = '4'")
-    # person_1.get_visit_info("person_id = '1'")
+    # person_1.get_person_data("where id = '4'")
+    # person_1.get_visit_info("where person_id = '4'")
     # person_1.edit_visit(visit_data, "id = '1'")
     person_1.add_visit(add_visit_data)

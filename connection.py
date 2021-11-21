@@ -45,7 +45,7 @@ class Connection:
         cursor.execute(insert_query)
         connection.commit()
         self.closeDB(connection, cursor)
-        print(f"Insert {data}done!")
+        print(f"Insert {data} done!")
 
     def getNextId(self, table):
         table = (table,)
